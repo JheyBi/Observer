@@ -7,10 +7,6 @@ Imutabilidade são funções que não alteram o estado do programa, produz o mes
 
 Funções de ordem superior (higher-order function) é uma função que recebe outra função como parâmetro (ou retorna uma função)
 
-# Building Blocks:
-
-Funções de ordem superior (higher-order function) é uma função que recebe outra função como parâmetro (ou retorna uma função)
-
 # Recursão:
 
 Na programação funcional, não há a utilização de laços de repetição tradicionais, como os loops for ou while. Em vez disso, recorre-se à técnica da recursão, em que uma função é capaz de chamar a si mesma durante a sua execução para resolver problemas de repetição.
