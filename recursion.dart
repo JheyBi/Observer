@@ -10,6 +10,6 @@ int factorial(int n) {
 int lambdaFac(int n) => n == 1 ? 1 : n * lambdaFac(n - 1);
 
 void main() {
-  print(factorial(4));
-  print(lambdaFac(4));
+  print(factorial(5));
+  print(lambdaFac(5));
 }

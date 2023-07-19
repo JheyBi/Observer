@@ -1,19 +1,32 @@
+int soma(int a, int b) {
+  return a + b;
+}
+
 //Funções de apenas um parametro (e currying)
-int Function(int) lambAddF(int a) => (int b) => a + b;
-Function(int) addF(int a) {
+Function(int) somaRed(int a) {
   return (int b) {
     return a + b;
   };
 }
 
+int Function(int) lambSomaRed(int a) => (int b) => a + b;
+
+// int add10(int b){
+//   return 10+b;
+// }
+
 void main() {
-  // vai imprimir 20 pois a função addF retorna uma função que recebe um parametro
-  print(addF(10)(10));
+  var a = 10;
+  var b = 5;
+  // vai imprimir 15 pois a função addF retorna uma função que recebe um parametro
+  //soma(a,b)
+  print(somaRed(a)(b));
 
   // agora quando passamos apenas um parametro, a função retorna uma função que recebe o segundo parametro
-  print(addF(10));
+  print(somaRed(a));
 
   // podemos armazenar a função retornada em uma variavel
-  final add10 = addF(10);
-  print(add10(5));
+  final add10 = somaRed(a);
+  print(add10(b));
+  print(add10(20));
 }
